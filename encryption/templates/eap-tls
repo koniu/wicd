@@ -8,6 +8,7 @@ protected identity *Identity private_key *Private_Key private_key_passwd *Privat
 ctrl_interface=/var/run/wpa_supplicant
 network={
    ssid="$_ESSID"
+   bssid=$_BSSID
    key_mgmt=WPA-EAP
    pairwise=TKIP
    group=TKIP

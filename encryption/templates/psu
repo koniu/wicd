@@ -7,6 +7,7 @@ protected password *Password
 ctrl_interface=/var/run/wpa_supplicant
 network={
     ssid="$_ESSID"
+    bssid=$_BSSID
     key_mgmt=IEEE8021X
     eap=PEAP
     phase2="auth=MSCHAPV2"

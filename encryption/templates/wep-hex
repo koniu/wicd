@@ -8,6 +8,7 @@ protected key *Key
 ctrl_interface=/var/run/wpa_supplicant
 network={
        ssid="$_ESSID"
+       bssid=$_BSSID
        scan_ssid=$_SCAN
        key_mgmt=NONE
        wep_key$_KEY_INDEX=$_KEY
